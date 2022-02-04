@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Anne Clingon</title>
+        <link rel="stylesheet" type="text/css" href="portfolio_project.css">
+    </head>
+
+    <!--BODY  -->
+    <body class="Background">
+
+        <!--NAV BAR-->
+        <div class="Navbar">
+            <a class="active" href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#GitHub">GitHub</a>
+            <a href="#Contact">Contact</a>
+        </div>
+
+        <!--BREAK FOR SPACE BTWN NAVBAR AND HEADING ONE-->
+        <br>
+        <br>
+
+        <!--BACKGROUND VIDEO-->
+        <div id="Home">
+            <video autoplay muted loop id="Flower_Video">
+                <source src="flowers.mp4" type="video/mp4">
+                <!--Display message if not playing-->
+                Your Browswer Does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--VIDEO TEXT-->
+        <div class="Video_Text">
+            <h1 class="white_text">Anne's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>They always say time changes things,
+                        <br> but you actually have to change them yoursefl. </q>
+                        <br> -Andy Warhol
+                        <br>
+                        <br> My name is Anne. Welcome to my portfolio website. On it I will tell you about my background and expirience.
+                        <br>
+                        <br> Thank you for stopping by and enjoy! 
+                </p>
+            </strong>
+        </div>
+
+        <!--About Section-->
+        <div class="Row" id="About">
+            <!--LEFT COLUMN-->
+            <div class="Column_2">
+                <img src="mountain.jpg" alt="An outdoor scence with mountains and a lake">
+            </div>
+            <!--RIGHT COLUMN-->
+            <div class="Column_1">
+                <h1>About</h1>
+                <p>
+                    I am working to become a software developer and have found a passion for coding. I love the outdoors and spending time with my dogs. I enjoy a variety
+                    of intelectual activies and actually have a degree in English with a minor in French. 
+                    <br>
+                    <br> I am curretly working through <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>'s Software Developer Boot Camp
+                    and trained and expirienced in the following web programming languages: HTML and CSS.
+                    <br> I am a front end developer and would love ot work with you on your project. <a href="#Contact">Contact</a> me below!
+                </p>
+            </div>
+        </div>
+
+        <!--GIT HUB SECTION-->
+        <div class="Row" id="GitHub">
+            <!--Left Column-->
+            <div class="Column_1">
+                <h1>GitHub</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/aclingon" target="_blank">Anne Clingon GitHub</a></p>
+                </p>
+            </div>
+            <!--Right Column-->
+            <div class="Column_2">
+                <a href="https://github.com/aclingon" target="_blank"><img src="computer.jpg" alt="Computer Picture"></a>
+            </div>
+        </div>
+
+        <!--CONTACT SECTION -->
+        <div class="Row" id="Contact">
+            <!--Contact Image, left column-->
+            <div class="Column_2 Column_tall">
+            <img src="contact.jpg" alt="Letter Picture">
+            </div>
+            <!--Contact Form, right column-->
+            <div class="Column_1 Column_tall">
+                <h1>Contact</h1>
+                <!--This Specifies where and how to send the form data; leaving blank for now-->
+                <form action="https://formspree.io/f/xoqredql" method="POST">
+                    <label>Name: </label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email: </label>
+                        <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
+                        <label>Message: </label>
+                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
+                            <input type="submit" value="SUBMIT">
+                </form>
+            </div>
+        </div>
+
+        <!--FOOTER SECTION-->
+        <footer>
+            <p>
+                <p class="center">Anne Clingon 2022</p>
+                <br>
+            </p>
+        </footer>
+    </body>
+
+
+</html>
